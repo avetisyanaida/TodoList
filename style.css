@@ -130,7 +130,7 @@ select {
 
 /* ====@media====== */
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
     header h1 {
         font-size: 50px;
         margin-top: 40px;
@@ -146,5 +146,48 @@ select {
     }
     select {
         width: 8rem;
+    }
+}
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 30px;
+    }
+    form input, form button {
+        font-size: 10px;
+    }
+    .filter-todo {
+        padding: 0.4rem;
+    }
+    .select:after {
+        padding: 0.4rem;
+    }
+    select {
+        width: 6rem;
+    }
+    .todo {
+        font-size: 0.8rem;
+    }
+    .trash-btn, .complete-btn {
+        padding: 0.4rem;
+    }
+}
+@media (max-width: 320px) {
+    form input, form button {
+        font-size: 6px;
+    }
+    .filter-todo {
+        padding: 0.2rem;
+    }
+    .select:after {
+        padding: 0.2rem;
+    }
+    select {
+        width: 4rem;
+    }
+    .todo {
+        font-size: 0.6rem;
+    }
+    .trash-btn, .complete-btn {
+        padding: 0.2rem;
     }
 }
