@@ -9,9 +9,11 @@ body {
     background-image: linear-gradient(120deg, #6abe21 0%, #7bd636 100% );
     height: 100vh;
     margin: 0;
+    width: 100%;
 }
 /* ============================= */
 header {
+    width: 100%;
     text-align: center;
     padding: 20px;
 }
@@ -20,6 +22,7 @@ header h1 {
     color: rgb(73, 180, 43);
 }
 form {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
