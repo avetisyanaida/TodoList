@@ -14,6 +14,9 @@ function addTodo(event) {
     todoDiv.classList.add('todo');
     let newTodo = document.createElement('li');
     newTodo.innerText = todoInput.value;
+    if (todoInput.value == '') {
+        return undefined
+    }
     saveLocalTodos(todoInput.value);
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
@@ -106,5 +109,4 @@ function getTodos() {
       
       todoList.appendChild(todoDiv);
     });
-  
 }
